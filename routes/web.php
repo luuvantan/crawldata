@@ -176,5 +176,6 @@ Route::get('saveimage',function(){
     		$picture1->save();
     	}
     	echo "complete";
+    	echo "Complete";
 
     });
