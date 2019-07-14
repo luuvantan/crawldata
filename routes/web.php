@@ -140,16 +140,18 @@ Route::get('db/where',function(){
 });
 
 Route::get('taobangimage',function(){
-	Schema::create('Picture1',function($table){
+	Schema::create('Picture2',function($table){
 		$table->increments('id');
 		$table->string('image');
 	});
 	echo "complete";
 });
 
-Route::get('a','MyController@themimage');
+Route::get('Addimage','MyController@Addimage');
 
-Route::get('saveimage',function(){
+
+//TEST SAVEIMAGE
+/*Route::get('saveimage',function(){
 	//$picture = new App\Picture();
     	 include(app_path().'\classas\simple_html_dom.php');
     	$html = file_get_html("http://mangak.info/");
@@ -164,7 +166,7 @@ Route::get('saveimage',function(){
 
     	}
     	echo "complete";
-		*/
+		
     	for($i=0;$i<93;$i++){
     		$picture1 = new App\Picture1();
     		//echo $img[$i]->src . "<br>";
@@ -178,4 +180,4 @@ Route::get('saveimage',function(){
     	echo "complete";
     	echo "Complete";
 
-    });
+    });*/
