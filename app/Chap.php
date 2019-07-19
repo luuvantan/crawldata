@@ -4,9 +4,8 @@ namespace App;
 
 use Illuminate\Database\Eloquent\Model;
 
-class Picture extends Model
+class Chap extends Model
 {
-    //
-    protected $table = "picture2";
+    protected $table = "chap";
     public $timestamps = false;
 }
